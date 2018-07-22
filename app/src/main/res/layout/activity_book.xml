@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/minimum_padding">
+
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-smallcaps"
+            tools:text="Book Title" />
+
+        <TextView
+            android:id="@+id/authors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            app:fontFamily="sans-serif-medium"
+            tools:text="Author 1, Author 2, ..." />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:justificationMode="inter_word"
+            android:maxLines="5"
+            android:paddingBottom="@dimen/minimum_padding"
+            android:paddingTop="@dimen/minimum_padding"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:fontFamily="sans-serif-medium"
+            tools:text="&quot;Android is a movement that has transferred data from laptop to hand-held devices like mobiles. Though there are alternate technologies that compete with Android, but it is the front runner in mobile technology by a long distance. Good knowledge in basic Java will help you to understand and develop Android technology and apps. Many universities in India and across the world are now teaching Android in their syllabus, which shows the importance of this subject. This book can be read by anyone who knows Java and XML concepts. It includes a lot of diagrams along with explanations to facilitate better understanding by students. This book aptly concludes with a project that uses Android, which will greatly benefit students in learning the practical aspects of Android. Key Features • Instructions in designing different Android user interfaces • Thorough explanations of all activities • JSON • Android-based project to aid practical understanding&quot;" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/minimum_padding"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/preview_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/minimum_padding"
+                android:layout_marginRight="@dimen/minimum_padding"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/preview"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:id="@+id/info_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/minimum_padding"
+                android:layout_marginRight="@dimen/minimum_padding"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/more_info"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:id="@+id/buy_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/buy"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/minimum_padding"
+            android:layout_marginTop="@dimen/minimum_padding"
+            android:background="@android:color/darker_gray" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/publisher"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/publisher"
+                    android:paddingLeft="@dimen/minimum_padding"
+                    android:paddingStart="@dimen/minimum_padding"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-medium"
+                    tools:text="Vikas Publishing House" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/year_of_publication"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/published_date"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/minimum_padding"
+                    android:paddingStart="@dimen/minimum_padding"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-medium"
+                    tools:text="2014" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/page_count_info_page"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/page_count"
+                    android:paddingLeft="@dimen/minimum_padding"
+                    android:paddingStart="@dimen/minimum_padding"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-medium"
+                    tools:text="374 pages" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/categories"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/categories"
+                    android:paddingLeft="@dimen/minimum_padding"
+                    android:paddingStart="@dimen/minimum_padding"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-medium"
+                    tools:text="Computers, Android, Programming, ..." />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/edition_language"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/minimum_padding"
+                    android:paddingStart="@dimen/minimum_padding"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-medium"
+                    tools:text="English" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

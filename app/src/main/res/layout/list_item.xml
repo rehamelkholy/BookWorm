@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/minimum_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_view"
+        android:orientation="horizontal"
+        android:padding="@dimen/minimum_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-medium"
+                tools:text="Book Title" />
+
+            <TextView
+                android:id="@+id/authors_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:fontFamily="sans-serif-medium"
+                tools:text="Author(s)" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/book_button"
+            android:layout_width="@dimen/search_icon_side"
+            android:layout_height="@dimen/search_icon_side"
+            android:contentDescription="@string/more_info_description"
+            android:src="@drawable/outline_library_books_black_48" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/minimum_padding"
+        android:paddingRight="@dimen/minimum_padding"
+        android:paddingTop="@dimen/small_vertical_padding">
+
+        <TextView
+            android:id="@+id/publisher_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/publisher_text_view"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/publication_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/publication_year_text_view"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/minimum_padding"
+        android:paddingRight="@dimen/minimum_padding"
+        android:paddingTop="@dimen/small_vertical_padding">
+
+        <TextView
+            android:id="@+id/language_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/language_view"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/page_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/page_count"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_snippet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/small_vertical_padding"
+        android:paddingLeft="@dimen/minimum_padding"
+        android:paddingRight="@dimen/minimum_padding"
+        android:paddingTop="@dimen/small_vertical_padding"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:fontFamily="sans-serif-medium"
+        tools:text="&quot;Many universities in India and across the world are now teaching Android in their syllabus, which shows the importance of this subject. This book can be read by anyone who knows Java and XML concepts.&quot;" />
+</LinearLayout>

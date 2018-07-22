@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BookWorm</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="no_books">There are no books to show.</string>
+    <string name="search_hint">What are you looking for?</string>
+    <string name="search_description">Search</string>
+    <string name="more_info_description">More Info</string>
+    <string name="publisher_text_view">Publisher:\n</string>
+    <string name="publication_year_text_view">Publication Date:\n</string>
+    <string name="language_view">Language:&#032;</string>
+    <string name="page_count">Page Count:&#032;</string>
+    <string name="preview">Preview</string>
+    <string name="more_info">More Info</string>
+    <string name="buy">Buy</string>
+    <string name="publisher">Publisher: </string>
+    <string name="year_of_publication">Date of Publication: </string>
+    <string name="page_count_info_page">Page Count: </string>
+    <string name="categories">Categories: </string>
+    <string name="edition_language">Edition Language: </string>
+    <string name="pages">%1$d pages</string>
+
+    <!-- Settings Menu Item [CHAR LIMIT=NONE] -->
+    <string name="settings_menu_item">Settings</string>
+    <!-- Settings Activity Title [CHAR LIMIT=NONE] -->
+    <string name="settings_title">Book Settings</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">orderBy</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_relevance_value</string>
+
+    <!-- Label for order-by magnitude option [ CHAR LIMIT=20] -->
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+</resources>

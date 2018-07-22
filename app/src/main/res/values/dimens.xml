@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="minimum_padding">16dp</dimen>
+    <dimen name="search_icon_side">48dp</dimen>
+    <dimen name="small_vertical_padding">8dp</dimen>
+</resources>
